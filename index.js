@@ -23,7 +23,7 @@ server.route({
         reply({
           utcDate: JSON.parse(utcBody).date,
           isoDate: JSON.parse(isoBody).date,
-          version: "2.0"
+          raw: req.params.timestamp
         })
       })
     })
